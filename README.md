@@ -18,9 +18,9 @@ Sitio web de una escuela de música de Guadalajara. Muestra la escuela, sus agru
 
 ## Cómo ejecutarlo
 
-1. Instala MAMP (o cualquier servidor con PHP 8 y `pdo_sqlite`).
+1. Instala MAMP (Para Mac) o WAMP (Para Windows)
 2. Pon el **Document Root** del servidor en la carpeta `codigo/` de este proyecto.
-3. Inicia los servidores y abre `http://localhost:8888`.
+3. Inicia los servidores y abre `http://localhost:8888` en el navegador.
 
 La base de datos (`conservatorio.db`) ya viene incluida en el repositorio.
 
