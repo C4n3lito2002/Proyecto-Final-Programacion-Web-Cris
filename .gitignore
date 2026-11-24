@@ -1,0 +1,11 @@
+# PHP / general
+*.log
+.DS_Store
+.env
+
+# Configuración local de Claude Code (no se sube al repo)
+.claude/
+
+# Dependencias
+/vendor/
+/node_modules/

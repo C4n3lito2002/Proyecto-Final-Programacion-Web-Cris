@@ -1,0 +1,74 @@
+/* Estilos propios del sitio. Se cargan después de Bootstrap y se usan junto con sus clases. */
+
+/* Paleta de la escuela */
+:root {
+    --color-marino: #16204A;
+    --color-magenta: #E63462;
+    --color-naranja: #F5821F;
+    --color-amarillo: #FFC93C;
+}
+
+/* Pie de página siempre al fondo, aunque la página tenga poco contenido */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Barra de navegación */
+.barra-principal {
+    background-color: var(--color-marino);
+}
+
+.barra-principal .nav-link.active {
+    color: var(--color-amarillo);
+}
+
+/* En pantallas chicas el nombre cede espacio para que el logo y el botón del menú
+   queden en la misma fila; el menú desplegado baja a su propia fila debajo. */
+@media (max-width: 991.98px) {
+    .barra-principal .navbar-brand {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: var(--color-marino);
+    color: #fff;
+}
+
+/* Botón principal: amarillo con texto marino (buen contraste) */
+.btn-conservatorio {
+    --bs-btn-color: var(--color-marino);
+    --bs-btn-bg: var(--color-amarillo);
+    --bs-btn-border-color: var(--color-amarillo);
+    --bs-btn-hover-color: var(--color-marino);
+    --bs-btn-hover-bg: var(--color-naranja);
+    --bs-btn-hover-border-color: var(--color-naranja);
+    --bs-btn-active-color: var(--color-marino);
+    --bs-btn-active-bg: var(--color-naranja);
+    --bs-btn-active-border-color: var(--color-naranja);
+    font-weight: 600;
+}
+
+/* Portada de la página de Inicio */
+.hero {
+    background-color: var(--color-marino);
+    color: #fff;
+    border-bottom: 6px solid var(--color-magenta);
+}
+
+/* Tarjetas de la página de Inicio */
+.tarjeta-concierto {
+    border-left: 6px solid var(--color-naranja);
+}
+
+.tarjeta-agrupacion {
+    border-top: 4px solid var(--color-magenta);
+}
